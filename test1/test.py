@@ -23,7 +23,7 @@ def read_chinese_characters(image_path):
     return text
 
 # 调用函数
-image_path = "./img/p3.png"
+image_path = "./o_png/8S.png"
 result = read_chinese_characters(image_path)
 if result is not None:
     print("识别到的文字：", result)

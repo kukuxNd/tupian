@@ -50,6 +50,6 @@ def batch_process_images(input_folder, output_folder):
             remove_chinese_characters(input_path, output_path)
 
 # 使用示例
-input_folder = "t_img"  # 输入文件夹路径
+input_folder = "o_png"  # 输入文件夹路径
 output_folder = "out_img"  # 输出文件夹路径
 batch_process_images(input_folder, output_folder)
