@@ -5,14 +5,14 @@ import imageio.v2 as imageio
 from PIL import Image
 import cv2
 import numpy as np
-
+import csv
 import pyglet
 
 def dds_to_png(dds_path):
     try:
         # Load DDS file using pyglet
         image = imageio.imread(dds_path, format='DDS')
-        # ½«Í¼ÏñÊý¾Ý×ª»»ÎªPillowÍ¼Ïñ¶ÔÏó
+        # ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ÎªPillowÍ¼ï¿½ï¿½ï¿½ï¿½ï¿½
         return image
     except Exception as e:
         print(f"Error loading {dds_path}: {str(e)}")
@@ -58,7 +58,7 @@ def scan_dds_files(root_dir):
                         "text": text
                     }
                     results.append(result)
-                    # ´òÓ¡µ±Ç°½á¹û
+                    # ï¿½ï¿½Ó¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½
                     print(f"file_path={file_path}, width={width}, height={height}, x={int(x)}, y={int(y)}, text={text}")
     
     
